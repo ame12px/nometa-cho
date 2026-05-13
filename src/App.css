@@ -117,6 +117,7 @@ input[type="date"] {
   appearance: none;
   width: 100%;
   text-align: left;
+  display: block;
 }
 
 .form-buttons {
