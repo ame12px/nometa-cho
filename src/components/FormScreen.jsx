@@ -7,6 +7,14 @@ function FormScreen({ onCancel, onSubmit, editData }) {
   const [date, setDate] = useState(today)
   const [memo, setMemo] = useState('')
 
+  const handleSubmit = () => {
+    if (!name) {
+      alert('くすり名を入力してください')
+      return
+    }
+    onSubmit({ name, date, memo })
+  }
+
   // editDataが渡されたらフォームに初期値をセット
   useEffect(() => {
     if (editData) {
@@ -46,7 +54,7 @@ function FormScreen({ onCancel, onSubmit, editData }) {
           <button className="cancel-button" onClick={onCancel}>キャンセル</button>
           <button
            className="submit-button"
-           onClick={() => onSubmit({ name, date, memo })}
+           onClick={handleSubmit}
           >
             {editData ? '更新する' : '登録する'}
           </button>
