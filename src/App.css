@@ -112,6 +112,12 @@
   resize: vertical;
 }
 
+input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
 .form-buttons {
   display: flex;
   gap: 12px;
