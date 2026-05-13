@@ -1,0 +1,176 @@
+.app {
+  max-width: 430px;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background: #f5f5f0;
+}
+
+.header {
+  background: #b8d9e8;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: #1a6fa8;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.list-screen {
+  min-height: 100vh;
+  background: #FFFDEA;
+}
+
+.list-top {
+  background: #b8d9e8;
+  padding: 0 20px 16px;
+}
+
+.add-button {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 2px solid #1a6fa8;
+  border-radius: 8px;
+  color: #1a6fa8;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.record-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.record-name { font-weight: bold; margin: 0 0 4px; font-size: 16px;}
+.record-date { font-size: 12px; color: #666; margin: 0 0 4px; }
+.record-memo { font-size: 14px; margin: 0; }
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.form {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.cancel-button {
+  flex: 1;
+  padding: 12px 16px;
+  background: white;
+  border: 2px solid #1a6fa8;
+  border-radius: 8px;
+  color: #1a6fa8;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button {
+  flex: 1;
+  padding: 12px 16px;
+  background: #1a6fa8;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.sort-button {
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #666;
+}
+
+.sort-active {
+  padding: 6px 12px;
+  background: #1a6fa8;
+  border: 1px solid #1a6fa8;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #fff;
+}
