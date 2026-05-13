@@ -1,16 +1,34 @@
-# React + Vite
+# のめた帖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+服薬記録アプリです。いつ・何を飲んだかを記録・管理できます。
 
-Currently, two official plugins are available:
+## 公開URL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://nometa-cho.vercel.app
 
-## React Compiler
+## 機能
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 服薬記録の登録・編集・削除
+- 薬名での検索・絞り込み
+- 日付の新しい順・古い順ソート
+- localStorage によるデータ永続化
+- モバイル対応（iOS実機確認済み）
 
-## Expanding the ESLint configuration
+## 使用技術
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- CSS（コンポーネント単位で管理）
+- localStorage
+
+## 開発の背景
+
+フロントエンドエンジニアを目指して学習中に制作したアプリです。
+Figmaでワイヤーフレームを作成してから実装するという、
+実務を意識した開発フローで制作しました。
+
+## 工夫した点
+
+- コンポーネントを役割ごとに分割（App / ListScreen / FormScreen）
+- 編集・新規登録を同じフォームで管理し、editIndexで状態を切り替え
+- iOSでの表示崩れを実機確認して修正
