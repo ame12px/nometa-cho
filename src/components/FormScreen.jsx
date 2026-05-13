@@ -23,7 +23,7 @@ function FormScreen({ onCancel, onSubmit, editData }) {
   return (
     <div>
       <header className="header">
-        <h1>おくすり記録</h1>
+        <h1>のめた帖</h1>
       </header>
 
       <div className="form">
