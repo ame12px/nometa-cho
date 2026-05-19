@@ -4,7 +4,7 @@
 
 ## 公開URL
 
-https://nometa-cho.vercel.app
+https://kusuripo.vercel.app
 
 ## 機能
 
