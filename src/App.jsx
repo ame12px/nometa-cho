@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import './App.css'
 import ListScreen from "./components/ListScreen"
 import FormScreen from "./components/FormScreen"
 
 function App() {
-  // 'list' か 'form' で画面を切り替える
-  const [screen, setScreen] = useState('list')
+  const navigate = useNavigate()
   const [records, setRecords] = useState(() => {
     const saved = localStorage.getItem('records')
     return saved ? JSON.parse(saved) : []
@@ -27,7 +27,7 @@ function App() {
 
   const handleEdit = (index) => {
     setEditIndex(index)
-    setScreen('form')
+    navigate('/form')
   }
 
   const handleSubmit = (newRecord) => {
@@ -40,28 +40,37 @@ function App() {
       // 先頭に追加（新しい順）
       setRecords([newRecord, ...records])
     }
-    setScreen('list')
+    navigate('/')
   }
 
   return (
     <div className="app">
-      {screen === 'list' ? (
-        <ListScreen
-          records={records}
-          onAdd={() => {
-            setEditIndex(null)
-            setScreen('form')
-          }}
-          onDelete={handleDelete}
-          onEdit={handleEdit}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ListScreen
+              records={records}
+              onAdd={() => {
+                setEditIndex(null)
+                navigate('/form')
+              }}
+              onDelete={handleDelete}
+              onEdit={handleEdit}
+            />
+          }
         />
-      ) : (
-        <FormScreen
-          onCancel={() => setScreen('list')}
-          onSubmit={handleSubmit}
-          editData={editIndex !== null ? records[editIndex] : null}
+        <Route
+          path="/form"
+          element={
+            <FormScreen
+              onCancel={() => navigate('/')}
+              onSubmit={handleSubmit}
+              editData={editIndex !== null ? records[editIndex] : null}
+            />
+          }
         />
-      )}
+      </Routes>
     </div>
   )
 }
