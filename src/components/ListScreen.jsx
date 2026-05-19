@@ -30,7 +30,7 @@ function ListScreen({ records, onAdd, onDelete, onEdit }) {
   return (
     <div className="list-screen">
       <header className="header">
-        <h1>のめた帖</h1>
+        <h1>くすりぽ</h1>
       </header>
 
       <div className="list-top">
