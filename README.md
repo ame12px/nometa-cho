@@ -13,6 +13,10 @@ https://nometa-cho.vercel.app
 - 日付の新しい順・古い順ソート
 - localStorage によるデータ永続化
 - モバイル対応（iOS実機確認済み）
+- React Router による画面遷移（ブラウザの戻るボタン対応）
+- 日時・曜日の自動表示（datetime-local）
+- ダークモード対応
+- 削除時の確認ダイアログ
 
 ## 使用技術
 
@@ -20,6 +24,7 @@ https://nometa-cho.vercel.app
 - Vite
 - CSS（コンポーネント単位で管理）
 - localStorage
+- React Router v7
 
 ## 開発の背景
 
@@ -35,3 +40,4 @@ Figmaでワイヤーフレームを作成してから実装するという、
 - iOSでの表示崩れを実機確認して修正
 - 空欄登録を防ぐバリデーション処理を実装
 - 差別化できるアプリ名と記録したくなるUIに調整
+- CSS変数でライト・ダークモードを一元管理
