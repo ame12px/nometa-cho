@@ -132,6 +132,11 @@
   resize: vertical;
 }
 
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #ccc;
+}
+
 input[type="datetime-local"] {
   -webkit-appearance: none;
   appearance: none;

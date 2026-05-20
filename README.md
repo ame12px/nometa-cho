@@ -29,6 +29,10 @@ https://kusuripo.vercel.app
 - ダークモード対応
 - 削除時の確認ダイアログ
 
+## デザイン
+
+[Figma ワイヤーフレーム](https://www.figma.com/design/bcw9kHtB4R5PIJSYnZjxQZ/260520_%E3%81%8F%E3%81%99%E3%82%8A%E3%81%BD?node-id=0-1&t=3WkrDMIMJ5HlEN3S-1)
+
 ## 使用技術
 
 - React 19
