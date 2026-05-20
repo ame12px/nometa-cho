@@ -8,10 +8,10 @@ https://kusuripo.vercel.app
 
 ## スクリーンショット
 
-![一覧画面（ライト）](src/assets/screenshot_light_list.png)
-![登録画面（ライト）](src/assets/screenshot_light_form.png)
-![一覧画面（ダーク）](src/assets/screenshot_dark_list.png)
-![登録画面（ダーク）](src/assets/screenshot_dark_form.png)
+<img src="src/assets/screenshot_light_list.png" width="250" />
+<img src="src/assets/screenshot_light_form.png" width="250" />
+<img src="src/assets/screenshot_dark_list.png" width="250" />
+<img src="src/assets/screenshot_dark_form.png" width="250" />
 
 ## 機能
 
