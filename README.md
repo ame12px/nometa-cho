@@ -10,10 +10,10 @@ https://kusuripo.vercel.app
 
 <table>
     <tr>
-        <img src="src/assets/screenshot_light_list.png" width="250" />
-        <img src="src/assets/screenshot_light_form.png" width="250" />
-        <img src="src/assets/screenshot_dark_list.png" width="250" />
-        <img src="src/assets/screenshot_dark_form.png" width="250" />
+        <td><img src="src/assets/screenshot_light_list.png" width="250" /></td>
+        <td><img src="src/assets/screenshot_light_form.png" width="250" /></td>
+        <td><img src="src/assets/screenshot_dark_list.png" width="250" /></td>
+        <td><img src="src/assets/screenshot_dark_form.png" width="250" /></td>
     </tr>
 </table>
 
