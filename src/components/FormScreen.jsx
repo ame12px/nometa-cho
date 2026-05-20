@@ -43,7 +43,7 @@ function FormScreen({ onCancel, onSubmit, editData }) {
       <div className="form">
         <div className="form-group">
           <label>くすり名</label>
-          <input type="text" placeholder="カロナール" value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="text" placeholder="ロキソニン" value={name} onChange={(e) => setName(e.target.value)} />
         </div>
 
         <div className="form-group">
@@ -53,7 +53,7 @@ function FormScreen({ onCancel, onSubmit, editData }) {
 
         <div className="form-group">
           <label>体調メモ</label>
-          <textarea placeholder="朝から頭が痛い" value={memo} onChange={(e) => setMemo(e.target.value)}></textarea>
+          <textarea placeholder="朝から頭がいたい" value={memo} onChange={(e) => setMemo(e.target.value)}></textarea>
         </div>
 
         <div className="form-buttons">

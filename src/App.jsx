@@ -12,7 +12,6 @@ function App() {
   })
   const [editIndex, setEditIndex] = useState(null)
 
-  // 2. recordsが変わるたびにlocalStorageに保存する
   useEffect(() => {
     if (records.length > 0) {
       localStorage.setItem('records', JSON.stringify(records))
@@ -32,12 +31,10 @@ function App() {
 
   const handleSubmit = (newRecord) => {
     if (editIndex !== null) {
-      // 編集モード → 該当データを上書き
       const updated = records.map((r, i) => i === editIndex ? newRecord : r)
       setRecords(updated)
       setEditIndex(null)
     } else {
-      // 先頭に追加（新しい順）
       setRecords([newRecord, ...records])
     }
     navigate('/')

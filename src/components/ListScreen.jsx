@@ -63,7 +63,12 @@ function ListScreen({ records, onAdd, onDelete, onEdit }) {
       
 
       <ul className="record-list">
-        {sorted.map((record, index) => (
+        {sorted.length ===0 ? (
+          <li className="empty-message">
+            まだ記録がありません
+          </li>
+        ) : (
+        sorted.map((record, index) => (
           <li key={index} className="record-item">
             <div>
               <p className="record-name">{record.name}</p>
@@ -87,7 +92,8 @@ function ListScreen({ records, onAdd, onDelete, onEdit }) {
               </button>
             </div>
           </li>
-        ))}
+        ))
+      )}
       </ul>
     </div>
   )

@@ -53,6 +53,14 @@
   background: var(--bg-list);
 }
 
+.empty-message {
+  list-style: none;
+  text-align: center;
+  padding: 48px 16px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
 .record-item {
   display: flex;
   justify-content: space-between;
